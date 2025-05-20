@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Website Draft</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raptor Aero | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <div class="logo">RAPTOR AERO</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="drones.html">Drones</a>
-            <a href="power.html">Power</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <header class="navbar">
+    <div class="logo">RAPTOR AERO</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="drones.html">Drones</a>
+      <a href="power.html">Power</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <h1>Experience Innovation</h1>
-    </section>
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-bg">
+      <source src="media/hero-video.mp4" type="video/mp4" />
+      <!-- fallback image -->
+      <img src="media/hero-fallback.jpg" alt="Raptor Drone in Action" />
+    </video>
+    <div class="hero-content">
+      <h1>Experience Innovation</h1>
+      <p>Elevate your vision with next-gen aerial technology.</p>
+      <a href="drones.html" class="btn">Explore Drones</a>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Raptor Aero. All rights reserved.</p>
-    </footer>
+  <footer class="footer">
+    <p>&copy; 2025 Raptor Aero. All rights reserved.</p>
+  </footer>
 </body>
 </html>
