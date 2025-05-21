@@ -87,14 +87,44 @@ nav a:hover {
 }
 
 /* Product Image */
+.product-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
 .product-image {
     max-width: 600px;
     width: 100%;
     height: auto;
-    display: block;
-    margin: 40px auto;
+    margin-bottom: 20px;
     border-radius: 8px;
 }
+
+.product-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
 
 /* Contact Form */
 .contact form {
