@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raptor Aero | Avionic Components</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">RAPTOR AERO</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Explore</a>
+        <div class="dropdown-content">
+          <a href="drones.html">Drones</a>
+          <a href="others.html">Avionic Components</a>
+        </div>
+      </div>
+      <a href="power.html">Specs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="product-page">
+    <!-- Product 1: Flight Controller -->
+    <div class="product">
+      <img src="media/fc6rt.jpg" alt="Raptor FC 6RT" class="product-image">
+      <h2 class="product-title">Raptor FC 6RT</h2>
+      <p>Next-gen flight controller with redundant IMUs, high-speed CAN interfaces, and robust power management designed for professional UAVs.</p>
+      <a href="#" class="btn" onclick="openModal('fc-modal')">Specs</a>
+    </div>
+
+    <!-- Product 2: CAN GPS -->
+    <div class="product">
+      <img src="media/raptor-gps.jpg" alt="Raptor CAN GPS" class="product-image">
+      <h2 class="product-title">Raptor CAN GPS</h2>
+      <p>High-precision GNSS module featuring u-blox M9N receiver, DroneCAN support, and built-in sensors for altitude and orientation tracking.</p>
+      <a href="#" class="btn" onclick="openModal('gps-modal')">Specs</a>
+    </div>
+  </section>
+
+  <!-- Modal for FC Specs -->
+  <div id="fc-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('fc-modal')">&times;</span>
+      <h2>Raptor FC 6RT Specifications</h2>
+      <p>Specifications coming soon...</p>
+    </div>
+  </div>
+
+  <!-- Modal for GPS Specs -->
+  <div id="gps-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('gps-modal')">&times;</span>
+      <h2>Raptor CAN GPS Specifications</h2>
+      <table>
+        <tr><th>GNSS Receiver</th><td><a href="#">u-blox M9N</a></td></tr>
+        <tr><th>Processor</th><td>STM32F412CEU6 MCU 32bit Arm® Cortex®-M4 100MHz 512KB Flash 256KB RAM</td></tr>
+        <tr><th>Mag</th><td>Bosch BMM350</td></tr>
+        <tr><th>Barometer</th><td>Bosch BMP388</td></tr>
+        <tr><th>IMU</th><td><a href="#">ICM-42688-P 6-Axis IMU</a></td></tr>
+        <tr><th>Safety Switch</th><td>Physical Button</td></tr>
+        <tr><th>Buzzer</th><td>Yes</td></tr>
+        <tr><th>Protocol</th><td>DroneCAN</td></tr>
+        <tr><th>LED Indicators</th><td>Safety LED, GPS Fix, RGB for System Status</td></tr>
+        <tr><th>Power</th><td>5V, 120mA Average, 130mA Max</td></tr>
+        <tr><th>Weight</th><td>33g</td></tr>
+        <tr><th>Make</th><td>Made in India</td></tr>
+        <tr><th>Connectors</th><td>2x4 Pin JST GH CAN (Pixhawk Std), 6 Pin JST SH (Pixhawk Std debug connector)</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Raptor Aero. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    // Optional: close on click outside
+    window.onclick = function(event) {
+      const modals = document.querySelectorAll(".modal");
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
