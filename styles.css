@@ -415,6 +415,60 @@ th, td {
   background: #0097a7;
 }
 
+/* FAQ Styles */
+.faqs-container {
+  max-width: 800px;
+  margin: 100px auto 50px;
+  padding: 0 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.faqs-container h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00bfff;
+  text-align: center;
+}
+
+.faq {
+  border-bottom: 1px solid #444;
+  margin-bottom: 20px;
+}
+
+.question {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+  width: 100%;
+  text-align: left;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.question:hover {
+  color: #00bfff;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  color: #ccc;
+}
+
+.answer p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* Toggle open state */
+.faq.active .answer {
+  max-height: 200px;
+}
+
+
 
 /* Footer */
 footer {
