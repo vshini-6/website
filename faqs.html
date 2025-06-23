@@ -63,4 +63,13 @@
 
   <!-- Add more FAQs as needed -->
 </main>
+<script>
+  const faqs = document.querySelectorAll('.faq');
 
+  faqs.forEach(faq => {
+    faq.querySelector('.question').addEventListener('click', () => {
+      faq.classList.toggle('active');
+    });
+  });
+</script>
+</body>
