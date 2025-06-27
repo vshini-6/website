@@ -345,7 +345,8 @@ th, td {
 
 .step-program {
   max-width: 1100px;
-  margin: 80px auto;
+
+  padding: 40px;
   background: #101010;
   color: #f5f5f5;
   border-radius: 12px;
