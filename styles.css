@@ -18,8 +18,8 @@ body {
 
 /* Light mode overrides */
 body.light-mode {
-  --bg-color: #ffffff;
-  --text-color: #000000;
+  --bg-color: #e1f0f2;
+  --text-color: #1a1919;
 }
 /* Header */
 header {
