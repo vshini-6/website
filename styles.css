@@ -415,6 +415,46 @@ th, td {
   background: #0097a7;
 }
 
+/* About Styles */
+.about-us {
+  padding: 40px 20px;
+  background-color: #111; /* match your dark mode */
+  color: #f1f1f1;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00bcd4;
+}
+
+.about-section .intro {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-list li {
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.about-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #00bcd4;
+  font-size: 1rem;
+}
+
 /* FAQ Styles */
 .faqs-container {
   max-width: 800px;
