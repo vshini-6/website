@@ -430,8 +430,8 @@ th, td {
 /* About Styles */
 .about-us {
   padding: 40px 20px;
-  background-color: #111; /* match your dark mode */
-  color: #f1f1f1;
+  background-color: var(--accent-color); /* match your dark mode */
+  color: var(--text-color);
   max-width: 900px;
   margin: auto;
 }
