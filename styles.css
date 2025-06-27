@@ -4,17 +4,19 @@
   --text-color: #f0f0f0;
   --accent-color: #00bcd4;
 }
+
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-family: 'Roboto', sans-serif;
-    color: #f0f0f0;
-    overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
+
+/* Light mode overrides */
 body.light-mode {
   --bg-color: #ffffff;
   --text-color: #000000;
