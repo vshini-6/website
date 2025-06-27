@@ -25,6 +25,7 @@
       <a href="about.html">About</a>
     <a href="faqs.html">FAQs</a>
   <a href="contact.html">Contact</a>
+      <button id="theme-toggle">Toggle Light/Dark Mode</button>
 </nav>
 
   </header>
@@ -41,6 +42,27 @@
       <a href="drones.html" class="btn">Explore Drones</a>
     </div>
   </section>
+  <script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Load saved mode
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    body.classList.add('light-mode');
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    
+    // Save preference
+    if (body.classList.contains('light-mode')) {
+      localStorage.setItem('theme', 'light');
+    } else {
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+</script>
 
   <footer class="footer">
     <p>&copy; 2025 Raptor Aero. All rights reserved.</p>
