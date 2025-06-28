@@ -26,23 +26,31 @@
   </header>
 
   <section class="product-page">
-    <!-- Product 1: Flight Controller -->
-    <div class="product">
-      <img src="fc6rt.jpg" alt="Raptor FC 6RT" class="product-image">
-      <h2 class="product-title">Raptor FC 6RT</h2>
-      <p>Next-gen flight controller with redundant IMUs, high-speed CAN interfaces, and robust power management designed for professional UAVs.</p>
-      <a href="#" class="btn" onclick="openModal('fc-modal')">Specs</a>
+  <!-- Product 1: Flight Controller -->
+  <div class="product">
+    <h2 class="product-title">Raptor FC 6RT</h2>
+    <div class="product-gallery">
+      <img src="rtkgpsf.jpg" alt="Raptor FC 6RT Front">
+      <img src="rtkgpsb.jpg" alt="Raptor FC 6RT Side">
+      <img src="images/fc6rt_3.jpg" alt="Raptor FC 6RT Board View">
     </div>
+    <p>Next-gen flight controller with redundant IMUs, high-speed CAN interfaces, and robust power management designed for professional UAVs.</p>
+    <a href="#" class="btn" onclick="openModal('fc-modal')">Specs</a>
+  </div>
 
-    <!-- Product 2: CAN GPS -->
-    <div class="product">
-      <img src="cangps.jpg" alt="Raptor CAN GPS" class="product-image">
-      <h2 class="product-title">Raptor CAN GPS</h2>
-      <p>High-precision GNSS module featuring u-blox M9N receiver, DroneCAN support, and built-in sensors for altitude and orientation tracking.</p>
-      <a href="#" class="btn" onclick="openModal('gps-modal')">Specs</a>
+  <!-- Product 2: CAN GPS -->
+  <div class="product">
+    <h2 class="product-title">Raptor CAN GPS</h2>
+    <div class="product-gallery">
+      <img src="cangps.jpg" alt="Raptor CAN GPS Top">
+      <img src="cangpsb.jpg" alt="Raptor CAN GPS Back">
+      <img src="images/cangps_3.jpg" alt="Raptor CAN GPS Demo Setup">
     </div>
-  </section>
-
+    <p>High-precision GNSS module featuring u-blox M9N receiver, DroneCAN support, and built-in sensors for altitude and orientation tracking.</p>
+    <a href="#" class="btn" onclick="openModal('gps-modal')">Specs</a>
+  </div>
+</section>
+  
   <!-- Modal for FC Specs -->
   <div id="fc-modal" class="modal">
     <div class="modal-content">
