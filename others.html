@@ -54,7 +54,19 @@
     <a href="#" class="btn" onclick="openModal('gps-modal')">Specs</a>
   </div>
 </section>
-  
+  <script>
+  const slideIndices = { fc: 0, gps: 0 };
+
+  function changeSlide(product, direction) {
+    const slides = document.querySelectorAll(`.${product}-slide`);
+    slideIndices[product] = (slideIndices[product] + direction + slides.length) % slides.length;
+
+    slides.forEach((slide, index) => {
+      slide.style.display = (index === slideIndices[product]) ? 'block' : 'none';
+    });
+  }
+</script>
+
   <!-- Modal for FC Specs -->
   <div id="fc-modal" class="modal">
     <div class="modal-content">
