@@ -347,6 +347,11 @@ th, td {
   margin-bottom: 20px;
 }
 
+.carousel-item {
+  display: none;
+  text-align: center;
+}
+
 .carousel-image {
   width: 100%;
   height: auto;
@@ -357,6 +362,11 @@ th, td {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
+.carousel-caption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
 
 .carousel-btn {
   position: absolute;
