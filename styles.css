@@ -22,10 +22,11 @@ body.light-mode {
   --text-color: #1a1919;
 }
 /* Header */
+/* Header */
 header {
     background: rgba(0, 0, 0, 0.85);
     color: white;
-    padding: 15px 40px;
+    padding: 20px 40px; /* Increase padding for taller header */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,10 +35,10 @@ header {
     z-index: 1000;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+/* Logo image styling */
+.logo-image {
+    height: 40px;      /* Adjust size as needed */
+    width: auto;       /* Maintain aspect ratio */
 }
 
 nav a {
