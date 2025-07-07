@@ -22,7 +22,6 @@ body.light-mode {
   --text-color: #1a1919;
 }
 /* Header */
-/* Header */
 header {
     background: rgba(0, 0, 0, 0.85);
     color: white;
@@ -37,7 +36,7 @@ header {
 
 /* Logo image styling */
 .logo-image {
-    height: 40px;      /* Adjust size as needed */
+    height: 50px;      /* Adjust size as needed */
     width: auto;       /* Maintain aspect ratio */
 }
 
