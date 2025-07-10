@@ -27,14 +27,16 @@ body.light-mode {
 header {
     background: rgba(0, 0, 0, 0.85);
     color: white;
-    padding: 20px 40px; /* Increase padding for taller header */
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
+
 
 /* Logo image styling */
 .logo-image {
@@ -48,16 +50,12 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 nav a:hover {
     color: #fff;
 }
 
-nav a {
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
 
 /* Dropdown Menu */
 .dropdown {
