@@ -3,6 +3,7 @@
   --bg-color: #111;
   --text-color: #f0f0f0;
   --accent-color: #00bcd4;
+  --header-color: #292929;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
 body.light-mode {
   --bg-color: #e1f0f2;
   --text-color: #1a1919;
+
 }
 /* Header */
 header {
@@ -73,7 +75,7 @@ nav a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--bg-color);
+    background-color: var(--header-color);
     min-width: 180px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
     z-index: 1001;
