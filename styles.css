@@ -34,7 +34,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 /* Logo image styling */
@@ -49,6 +48,7 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 nav a:hover {
