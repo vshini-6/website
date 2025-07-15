@@ -374,7 +374,7 @@ th, td {
 .carousel-caption {
   margin-top: 8px;
   font-size: 0.9rem;
-  color: #ccc;
+  color: var(--test-color);
 }
 
 .carousel-btn {
