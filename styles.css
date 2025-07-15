@@ -251,7 +251,7 @@ nav a:hover {
     gap: 15px;
     max-width: 400px;
     margin: 50px auto;
-    background: #1a1a1a;
+    background: --accent-color;
     padding: 30px;
     border-radius: 10px;
 }
