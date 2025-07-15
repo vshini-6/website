@@ -587,7 +587,7 @@ th, td {
 
 /* Footer */
 footer {
-    background: var(--bg-color);
+    background: var(--header-color);
     color: #777;
     text-align: center;
     padding: 20px;
