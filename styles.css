@@ -251,9 +251,10 @@ nav a:hover {
     gap: 15px;
     max-width: 400px;
     margin: 50px auto;
-    background: --header-color;
+    background: var(--header-color);
     padding: 30px;
     border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .contact input,
