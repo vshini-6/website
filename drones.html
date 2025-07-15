@@ -34,6 +34,27 @@
     <a href="nova-details.html" class="btn">Learn More</a>
     <a href="power.html" class="btn">Specs</a>
   </section>
+  <script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Load saved mode
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    body.classList.add('light-mode');
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    
+    // Save preference
+    if (body.classList.contains('light-mode')) {
+      localStorage.setItem('theme', 'light');
+    } else {
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+</script>
 
   <footer>
     <p>&copy; 2025 Raptor Aero. All rights reserved.</p>
