@@ -9,62 +9,100 @@
 <body>
     <header>
         <div class="logo">
-  <a href="index.html">
-    <img src="raptor_logo.png" alt="Raptor Aero Logo" class="logo-image" />
-  </a>
-</div>
+            <a href="index.html">
+                <img src="raptor_logo.png" alt="Raptor Aero Logo" class="logo-image" />
+            </a>
+        </div>
         <nav>
-                <a href="about.html">About</a>
-  <div class="dropdown">
-    <a href="#" class="dropbtn">Explore</a>
-    <div class="dropdown-content">
-      <a href="drones.html">Drones</a>
-      <a href="others.html">Avionic Components</a>
-    </div>
-  </div>
-    <a href="step.html">Raptor STEP</a>
-    <a href="faqs.html">FAQs</a>
-  <a href="contact.html">Contact</a>
-</nav>
+            <a href="about.html">About</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Explore</a>
+                <div class="dropdown-content">
+                    <a href="drones.html">Drones</a>
+                    <a href="others.html">Avionic Components</a>
+                </div>
+            </div>
+            <a href="step.html">Raptor STEP</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
+
     <main class="about-us">
-  <section class="about-section">
-    <h1>About Us</h1>
-    <p class="intro">
-      Founded in Nov 2024 by industry experts in SoC and Systems Engineering, <strong>Raptor Aero</strong> is a full-stack drone technology enablement company.
-    </p>
-    <ul class="about-list">
-      <li>We design and deliver indigenous, production-ready drone platforms.</li>
-      <li>Our solutions include airframes, electronics, payload integration, flight stack, and cloud tools.</li>
-      <li>We empower other drone companies to assemble, certify, and scale under their own brand.</li>
-      <li>We handle all the technical aspects — so our partners can focus on growth.</li>
-    </ul>
-  </section>
+        <!-- About Section -->
+        <section class="about-section">
+            <h1>About Us</h1>
+            <p class="intro">
+                Founded in Nov 2024 by industry experts in SoC and Systems Engineering, 
+                <strong>Raptor Aero</strong> is a full-stack drone technology enablement company.
+            </p>
+            <ul class="about-list">
+                <li>We design and deliver indigenous, production-ready drone platforms.</li>
+                <li>Our solutions include airframes, electronics, payload integration, flight stack, and cloud tools.</li>
+                <li>We empower other drone companies to assemble, certify, and scale under their own brand.</li>
+                <li>We handle all the technical aspects — so our partners can focus on growth.</li>
+            </ul>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="vision-section">
+            <h2>Our Vision</h2>
+            <p>
+                Our Vision is to be the global leader in drone-powered data solutions, transforming how industries 
+                connect technology and insights to build a smarter, safer, and more sustainable future.
+            </p>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission-section">
+            <h2>🌍 Our Mission</h2>
+            <p>
+                To create cutting-edge solutions that empower industries by making data accessible and actionable, 
+                driving simplified decision-making, improved operational efficiency, and sustainable outcomes.
+            </p>
+            <p>
+                We are a startup dedicated to innovating, designing, and developing next-generation drone components 
+                and unmanned aerial systems (UAS). Our mission is to redefine UAV technology by integrating AI, 
+                automation, and cutting-edge materials into drone design and manufacturing.
+            </p>
+        </section>
+
+        <!-- What We Do Section -->
+        <section class="what-we-do">
+            <h2>🔹 What We Do</h2>
+            <ul>
+                <li><strong>✅ Drone Component Development:</strong> High-precision GPS & RTK modules, AI-driven flight controllers, and lightweight composite structures for enhanced aerodynamics.</li>
+                <li><strong>✅ Drone Design & Integration as a Service:</strong> Custom UAV development for defense, agriculture, logistics, and industrial inspections.</li>
+                <li><strong>✅ AI & Automation in UAVs:</strong> In-house AI-powered design tools that optimize drone performance and enable rapid prototyping.</li>
+            </ul>
+        </section>
+
+        <!-- Dark Mode Script -->
         <script>
-  const toggleBtn = document.getElementById('theme-toggle');
-  const body = document.body;
+            const toggleBtn = document.getElementById('theme-toggle');
+            const body = document.body;
 
-  // Load saved mode
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'light') {
-    body.classList.add('light-mode');
-  }
+            // Load saved mode
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                body.classList.add('light-mode');
+            }
 
-  toggleBtn.addEventListener('click', () => {
-    body.classList.toggle('light-mode');
-    
-    // Save preference
-    if (body.classList.contains('light-mode')) {
-      localStorage.setItem('theme', 'light');
-    } else {
-      localStorage.setItem('theme', 'dark');
-    }
-  });
-</script>
-</main>
+            toggleBtn?.addEventListener('click', () => {
+                body.classList.toggle('light-mode');
+                
+                // Save preference
+                if (body.classList.contains('light-mode')) {
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
+        </script>
+    </main>
+
     <footer>
         <p>&copy; 2025 Raptor Aero. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
