@@ -627,7 +627,7 @@ th, td {
 
 .card p {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-color);
 }
 
 .card button {
