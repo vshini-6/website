@@ -169,6 +169,56 @@ USB
     </div>
   </div>
 
+  <!-- Modal for RTK GPS Specs -->
+<div id="rtk-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('rtk-modal')">&times;</span>
+    <h2>Raptor RTK GPS Specifications</h2>
+
+    <h3>Description</h3>
+    <p>
+      DroneCAN RTK GPS module with integrated Magnetometer, Barometer, IMU, Buzzer, and Safety Switch.
+      Supports DroneCAN firmware updating for maximum compatibility.
+    </p>
+
+    <h3>Sensors</h3>
+    <ul>
+      <li><strong>Ublox F9P GPS:</strong> L1/L2 multi-band GNSS receiver delivering centimeter-level accuracy in seconds. Concurrent reception of GPS, GLONASS, Galileo, and BeiDou. Multi-band RTK with fast convergence and high reliability.</li>
+      <li><strong>Bosch BMM350:</strong> Magnetometer</li>
+      <li><strong>Bosch BMP388:</strong> Barometer</li>
+      <li><strong>Invensense ICM-42688-P:</strong> 6-Axis IMU</li>
+      <li><strong>MCU:</strong> STM32</li>
+    </ul>
+
+    <h3>Features</h3>
+    <ul>
+      <li>Safety Button and Buzzer</li>
+      <li>Two Pixhawk Standard CAN Connectors (4-Pin JST GH)</li>
+      <li>F9P "UART 2" Connector (3-Pin JST GH - TX, RX, GND)</li>
+      <li>Pixhawk Standard Debug Connector (6-Pin JST SH)</li>
+    </ul>
+
+    <h3>LED Indicators</h3>
+    <ul>
+      <li>Safety LED</li>
+      <li>GPS Fix</li>
+      <li>RTK Status</li>
+      <li>RGB System Status</li>
+    </ul>
+
+    <h3>Power Requirements</h3>
+    <p>5V, 170mA average, 180mA max</p>
+
+    <h3>Includes</h3>
+    <ul>
+      <li>4-Pin Pixhawk Standard CAN Cable</li>
+      <li>GPS Antenna</li>
+      <li>Ublox ANN-MB-00-00</li>
+    </ul>
+  </div>
+</div>
+
+
   <footer class="footer">
     <p>&copy; 2025 Raptor Aero. All rights reserved.</p>
   </footer>
