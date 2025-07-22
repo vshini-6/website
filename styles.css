@@ -589,7 +589,7 @@ th, td {
 
 .raptor-step {
   padding: 20px;
-  background: #f8f9fa;
+  background: var(--bg-color);
   font-family: Arial, sans-serif;
 }
 
@@ -617,12 +617,6 @@ th, td {
   margin-bottom: 20px;
   text-align: center;
   padding: 15px;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ddd;
 }
 
 .card h3 {
