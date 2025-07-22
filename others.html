@@ -67,6 +67,25 @@
     <p>High-precision GNSS module featuring u-blox M9N receiver, DroneCAN support, and built-in sensors for altitude and orientation tracking.</p>
     <a href="#" class="btn" onclick="openModal('gps-modal')">Specs</a>
   </div>
+    <!-- Product 3 -->
+    <div class="product">
+    <h2 class="product-title">Raptor FC 6RT</h2>
+    <div class="carousel" id="fc-carousel">
+  <button class="carousel-btn left" onclick="changeSlide('fc', -1)">&#10094;</button>
+  <div class="carousel-item fc-slide" style="display: block;">
+  <img src="fc1.jpg" class="carousel-image" alt="FC Image 1">
+  <div class="carousel-caption">Flight Controller</div>
+</div>
+
+<div class="carousel-item fc-slide">
+  <img src="fc2.jpg" class="carousel-image" alt="FC Image 2">
+  <div class="carousel-caption">Flight Controller</div>
+</div>
+  <button class="carousel-btn right" onclick="changeSlide('fc', 1)">&#10095;</button>
+</div>
+    <p>Next-gen flight controller with redundant IMUs, high-speed CAN interfaces, and robust power management designed for professional UAVs.</p>
+    <a href="#" class="btn" onclick="openModal('fc-modal')">Specs</a>
+  </div>
 </section>
   <script>
   const slideIndices = { fc: 0, gps: 0 };
