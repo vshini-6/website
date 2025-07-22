@@ -651,7 +651,7 @@ th, td {
 .card img {
   width: 100%;
   max-width: 300px; /* Limit the width */
-  height: 180px;    /* Fixed height */
+  height: 200px;    /* Fixed height */
   object-fit: cover; /* Crop the image nicely without distortion */
   border-bottom: 1px solid #ddd;
   margin: 0 auto; /* Center the image */
