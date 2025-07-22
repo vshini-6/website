@@ -68,38 +68,43 @@
     <a href="#" class="btn" onclick="openModal('gps-modal')">Specs</a>
   </div>
     <!-- Product 3 -->
-    <div class="product">
+<div class="product">
     <h2 class="product-title">Raptor RTK GPS</h2>
+    
+    <!-- Carousel -->
     <div class="carousel" id="fc-carousel">
-  <button class="carousel-btn left" onclick="changeSlide('fc', -1)">&#10094;</button>
-  <div class="carousel-item fc-slide" style="display: block;">
-  <img src="rtkbase.jpg" class="carousel-image" alt="FC Image 1">
-  <div class="carousel-caption">RTK Base front</div>
-</div>
-
-<div class="carousel-item fc-slide">
-  <img src="rtkbaseb.jpg" class="carousel-image" alt="FC Image 2">
-  <div class="carousel-caption">RTK Base back</div>
-</div>
-  <button class="carousel-btn right" onclick="changeSlide('fc', 1)">&#10095;</button>
-</div>
-
-      <div class="carousel-item fc-slide">
-  <img src="rtkgpsf.jpg" class="carousel-image" alt="FC Image 2">
-  <div class="carousel-caption">RTK GPS front</div>
-</div>
-  <button class="carousel-btn right" onclick="changeSlide('fc', 1)">&#10095;</button>
-</div>
-
-    <div class="carousel-item fc-slide">
-  <img src="rtkgpsb.jpg" class="carousel-image" alt="FC Image 2">
-  <div class="carousel-caption">RTK GPS back</div>
-</div>
-  <button class="carousel-btn right" onclick="changeSlide('fc', 1)">&#10095;</button>
-</div>
+        <!-- Left button -->
+        <button class="carousel-btn left" onclick="changeSlide('fc', -1)">&#10094;</button>
+        
+        <!-- Slides -->
+        <div class="carousel-item fc-slide" style="display: block;">
+            <img src="rtkbase.jpg" class="carousel-image" alt="RTK Base front">
+            <div class="carousel-caption">RTK Base front</div>
+        </div>
+        
+        <div class="carousel-item fc-slide">
+            <img src="rtkbaseb.jpg" class="carousel-image" alt="RTK Base back">
+            <div class="carousel-caption">RTK Base back</div>
+        </div>
+        
+        <div class="carousel-item fc-slide">
+            <img src="rtkgpsf.jpg" class="carousel-image" alt="RTK GPS front">
+            <div class="carousel-caption">RTK GPS front</div>
+        </div>
+        
+        <div class="carousel-item fc-slide">
+            <img src="rtkgpsb.jpg" class="carousel-image" alt="RTK GPS back">
+            <div class="carousel-caption">RTK GPS back</div>
+        </div>
+        
+        <!-- Right button -->
+        <button class="carousel-btn right" onclick="changeSlide('fc', 1)">&#10095;</button>
+    </div>
+    
     <p>Next-gen flight controller with redundant IMUs, high-speed CAN interfaces, and robust power management designed for professional UAVs.</p>
     <a href="#" class="btn" onclick="openModal('fc-modal')">Specs</a>
-  </div>
+</div>
+
 </section>
   <script>
   const slideIndices = { fc: 0, gps: 0 };
