@@ -650,7 +650,7 @@ th, td {
 }
 .card img {
   width: 100%;
-  max-width: 280px; /* Limit the width */
+  max-width: 300px; /* Limit the width */
   height: 180px;    /* Fixed height */
   object-fit: cover; /* Crop the image nicely without distortion */
   border-bottom: 1px solid #ddd;
