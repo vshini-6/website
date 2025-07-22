@@ -132,7 +132,7 @@ nav a:hover {
     max-width: 800px;
     border-radius: 10px;
     color: #f0f0f0;
-    max-height: 90vh; /* Limit height */
+    max-height: 100vh; /* Limit height */
     overflow-y: auto; /* Scroll inside modal-content if needed */
     box-sizing: border-box;
 }
