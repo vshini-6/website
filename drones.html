@@ -1,39 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nova Drone - Raptor Aero</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone - RAPTOR AERO</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-  <a href="index.html">
-    <img src="raptor_logo.png" alt="Raptor Aero Logo" class="logo-image" />
-  </a>
-</div>
-    <nav>
-          <a href="about.html">About</a>
-  <div class="dropdown">
-    <a href="#" class="dropbtn">Explore</a>
-    <div class="dropdown-content">
-      <a href="drones.html">Drones</a>
-      <a href="others.html">Avionic Components</a>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="raptor_logo.png" alt="Raptor Aero Logo" class="logo-image" />
+            </a>
+        </div>
+        <nav>
+            <a href="about.html">About</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Explore</a>
+                <div class="dropdown-content">
+                    <a href="drones.html">Drones</a>
+                    <a href="others.html">Avionic Components</a>
+                </div>
+            </div>
+            <a href="step.html">Raptor STEP</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+  <main class="container">
+    <section class="raptor-step">
+  <div class="platform-grid">
+    
+    <!-- Current Vehicle Platform -->
+    <div class="platform current">
+      <h2>Current Vehicle Platform</h2>
+      <div class="card">
+        <img src="novadrone.jpeg" alt="Raptor Aero Nova">
+        <h3>Raptor Aero – Nova</h3>
+        <p>Mapping/ISR drone – up to 60 mins endurance, Level 5 wind resistance.</p>
+        <button onclick="openModal('nova-modal')">View Specs</button>
+      </div>
+    </div>
+
+    <!-- Future Vehicle Platform -->
+    <div class="platform future">
+      <h2>Future Vehicle Platform</h2>
+      <div class="card">
+        <img src="gryphon.jpg" alt="Raptor Aero Gryphon">
+        <h3>Raptor Aero – Gryphon</h3>
+        <p>1.5 m wingspan | Tail sitter UAV | Up to 90 mins endurance.</p>
+      </div>
+
+      <div class="card">
+        <img src="zeta.jpg" alt="Raptor Aero Zeta">
+        <h3>Raptor Aero – Zeta</h3>
+        <p>Radically new UAV platform – Not a fixed wing, not a quad!</p>
+      </div>
+
+      <div class="card">
+        <img src="supernova.jpg" alt="Raptor Aero Super Nova">
+        <h3>Raptor Aero – Super Nova</h3>
+        <p>Up to 90 mins endurance | Level 6 wind resistance.</p>
+      </div>
+
+      <div class="card">
+        <img src="grasshopper.jpg" alt="Raptor Aero Grasshopper">
+        <h3>Raptor Aero – Grasshopper</h3>
+        <p>Tandem Wing ISR UAV | Up to 4.5 hours endurance.</p>
+      </div>
+
+      <div class="card">
+        <img src="gravix.jpg" alt="Raptor Aero Gravix">
+        <h3>Raptor Aero – Gravix</h3>
+        <p>Super heavy (40–200 kg) payload platform.</p>
+      </div>
     </div>
   </div>
-      <a href="step.html">Raptor STEP</a>
-    <a href="faqs.html">FAQs</a>
-  <a href="contact.html">Contact</a>
-</nav>
-  </header>
+</section>
+    </section>
+  </main>
 
-  <section class="product-page">
-    <img src="novadrone.jpeg" alt="Nova Drone" class="product-image" />
-    <h1 class="product-title">Nova Drone</h1>
-    <a href="nova-details.html" class="btn">Learn More</a>
-    <a href="power.html" class="btn">Specs</a>
-  </section>
   <script>
   const toggleBtn = document.getElementById('theme-toggle');
   const body = document.body;
