@@ -40,8 +40,8 @@ header {
 
 /* Logo image styling */
 .logo-image {
-    height: 100px;      /* Adjust size as needed */
-    width: auto;       /* Maintain aspect ratio */
+    height: 120px; 
+    width: auto;  
 }
 
 nav a {
