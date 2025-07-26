@@ -40,8 +40,10 @@ header {
 
 /* Logo image styling */
 .logo-image {
-    height: 120px; 
-    width: auto;  
+    height: 100px;
+    width: auto;
+    transform: scale(1.3); /* Enlarge by 30% */
+    transform-origin: center;
 }
 
 nav a {
