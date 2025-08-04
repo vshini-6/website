@@ -517,8 +517,10 @@ th, td {
 /* Header styling for the page */
 .step-header {
   text-align: center;
+  padding-top: 80px;
   margin-bottom: 2rem;
 }
+
 
 .step-header h1 {
   font-size: 2.5rem;
