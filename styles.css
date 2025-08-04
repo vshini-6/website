@@ -504,6 +504,97 @@ th, td {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* Container for the whole page content */
+.step-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+/* Header styling for the page */
+.step-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.step-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.step-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Section styling */
+.step-section {
+  background: #1e1e1e; /* Or any background color to highlight the section */
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.step-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #00bcd4; /* Accent color */
+}
+
+/* Flex styling for image and content */
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* Image styling */
+.section-img {
+  flex: 1 1 300px;
+  max-width: 40%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* List styling */
+.step-section ul {
+  flex: 1 1 300px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.step-section ul li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+/* CTA button styling */
+.cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta .btn {
+  background: #00bcd4;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.cta .btn:hover {
+  background: #0097a7;
+}
+
+
 
 /* About Styles */
 .about-us {
