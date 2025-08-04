@@ -595,7 +595,7 @@ th, td {
 
 /* Toggle open state */
 .faq.active .answer {
-  max-height: 200px;
+  max-height: none;
 }
 
 .raptor-step {
