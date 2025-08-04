@@ -571,7 +571,7 @@ th, td {
 
 /* List styling */
 .step-section ul {
-  color: var(--text-color);
+  color: #f0f0f0;
   flex: 1 1 300px;
   list-style: none;
   padding: 0;
