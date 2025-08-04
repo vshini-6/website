@@ -553,6 +553,7 @@ th, td {
 
 /* Flex styling for image and content */
 .section-content {
+  color: var(--header-color);
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
