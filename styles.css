@@ -602,6 +602,41 @@ th, td {
   background: #0097a7;
 }
 
+/* Expandable image styling (optional cursor) */
+.expandable {
+  cursor: zoom-in;
+}
+
+/* Lightbox overlay */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Lightbox image */
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+  border-radius: 8px;
+}
+
+/* Close button */
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
 
 
 /* About Styles */
