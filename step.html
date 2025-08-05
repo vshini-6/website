@@ -48,7 +48,7 @@
   <section class="step-section">
     <h3>What’s Included?</h3>
     <div class="section-content">
-      <img src="step2.jpg" alt="Architecture Diagram" class="section-img">
+      <img src="step2.jpg" alt="Architecture Diagram" class="section-img expandable" data-full="step2.jpg">
       <ul>
         <li><strong>Airframe:</strong> Aerodynamically tuned frames</li>
         <li><strong>Propulsion:</strong> Motors, ESCs, Propellers</li>
@@ -78,7 +78,7 @@
   <section class="step-section">
     <h3>How It Works</h3>
     <div class="section-content">
-      <img src="step1.jpg" alt="How It Works Diagram" class="section-img">
+      <img src="step1.jpg" alt="How It Works Diagram" class="section-img expandable" data-full="step1.jpg">
       <ul>
         <li>You share your mission needs (e.g. payload, range, endurance)</li>
         <li>Raptor Configurator (AI tool) suggests an optimal setup</li>
@@ -138,5 +138,36 @@
 <footer>
         <p>&copy; 2025 Raptor Aero. All rights reserved.</p>
     </footer>
+  <div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="Expanded Image">
+</div>
+  <script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.lightbox .close');
+
+  // Click to open
+  document.querySelectorAll('.expandable').forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.dataset.full || img.src;
+    });
+  });
+
+  // Click close
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    lightboxImg.src = '';
+  });
+
+  // Click outside image closes lightbox
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+      lightboxImg.src = '';
+    }
+  });
+</script>
 </body>
 </html>
