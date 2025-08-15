@@ -104,10 +104,31 @@
     <p>Next-gen flight controller with redundant IMUs, high-speed CAN interfaces, and robust power management designed for professional UAVs.</p>
     <a href="#" class="btn" onclick="openModal('rtk-modal')">Specs</a>
 </div>
+    <!-- Product: Raptor SmartPDB -->
+<div class="product">
+  <h2 class="product-title">Raptor SmartPDB</h2>
+  <div class="carousel" id="pdb-slide">
+    <button class="carousel-btn left" onclick="changeSlide('pdb', -1)">&#10094;</button>
+    
+    <div class="carousel-item pdb-slide" style="display: block;">
+      <img src="pbd.jpg" class="carousel-image" alt="SmartPDB Front View">
+      <div class="carousel-caption">Front View - Raptor SmartPDB</div>
+    </div>
+    <button class="carousel-btn right" onclick="changeSlide('pdb', 1)">&#10095;</button>
+  </div>
+
+  <p>
+    Raptor SmartPDB (Power Distribution Board) allows transferring power from the battery 
+    to ESCs/Motors and generating power supply for the flight controller and other peripherals 
+    with different voltage levels.
+  </p>
+  
+  <a href="#" class="btn" onclick="openModal('pdb-modal')">Specs</a>
+</div>
 
 </section>
   <script>
-  const slideIndices = { fc: 0, gps: 0, rtk: 0};
+  const slideIndices = { fc: 0, gps: 0, rtk: 0, pbd: 0};
 
   function changeSlide(product, direction) {
     const slides = document.querySelectorAll(`.${product}-slide`);
@@ -241,6 +262,26 @@
       <li>4-Pin Pixhawk Standard CAN Cable</li>
       <li>GPS Antenna</li>
       <li>Ublox ANN-MB-00-00</li>
+    </ul>
+  </div>
+</div>
+
+  <!-- Modal for SmartPDB Specs -->
+<div id="pdb-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('pdb-modal')">&times;</span>
+    <h2>Raptor SmartPDB Specifications</h2>
+
+    <h3>Main Features</h3>
+    <ul>
+      <li><strong>Input Voltage:</strong> Up to 60V (14S battery)</li>
+      <li><strong>Current Handling:</strong> Up to 400A</li>
+      <li>Supports 12 pairs of pads for powering up to 12 motors</li>
+      <li>Integrated voltage and current sensors</li>
+      <li>Integrated DC-DC converter from 10–60V to 5V @ 5A</li>
+      <li>Integrated DC-DC converter from 10–60V to 12V @ 5A</li>
+      <li>5V and 12V power output terminals (standard 2.54mm connectors)</li>
+      <li>Buzzer</li>
     </ul>
   </div>
 </div>
